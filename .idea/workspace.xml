@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1d778a-0f4f-471f-ac2a-0094a922aceb" name="变更" comment="JDBC简单应用">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/JdbcDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/JdbcDemo.java" afterDir="false" />
-    </list>
+    <list default="true" id="fd1d778a-0f4f-471f-ac2a-0094a922aceb" name="变更" comment="JDBC简单应用" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650337321342</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="JDBC简单应用">
+      <created>1650337557899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650337557899</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
