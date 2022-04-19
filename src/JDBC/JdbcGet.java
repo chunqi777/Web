@@ -34,6 +34,7 @@ public class JdbcGet {
         //或的结果不在需要sql语句
         ResultSet rs = pStmt.executeQuery();
 
+
         ArrayList<emp> emps = new ArrayList<>();
 
         while (rs.next()) {
@@ -71,7 +72,7 @@ public class JdbcGet {
 
         ResultSet rs = stmt.executeQuery(sql);
 
-        ArrayList<JDBC.emp> emps = new ArrayList<>();
+        ArrayList<emp> emps = new ArrayList<>();
 
         while (rs.next()) {
             emps.add(new emp(rs.getInt("id"),
@@ -86,51 +87,5 @@ public class JdbcGet {
         rs.close();
         conn.close();
         stmt.close();
-    }
-}
-
-
-class emp {
-    private int id;
-    private String name;
-    private double money;
-
-    public emp(int id, String name, double money) {
-        this.id = id;
-        this.name = name;
-        this.money = money;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getMoney() {
-        return money;
-    }
-
-    public void setMoney(double money) {
-        this.money = money;
-    }
-
-    @Override
-    public String toString() {
-        return "emp{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", money=" + money +
-                '}';
     }
 }
