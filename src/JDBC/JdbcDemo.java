@@ -21,8 +21,10 @@ public class JdbcDemo {
         Scanner sc = new Scanner(System.in);
         System.out.print("请输入名字:");
         String name = "sc.next()";
-//        System.out.print("请输入工资:");
-//        int salary = sc.nextInt();
+/*
+        System.out.print("请输入工资:");
+        int salary = sc.nextInt();
+*/
         String s = sc.next();
 
         //sql语句
