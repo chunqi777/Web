@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1d778a-0f4f-471f-ac2a-0094a922aceb" name="变更" comment="JDBC简单应用">
-      <change afterPath="$PROJECT_DIR$/lib/druid-1.2.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Demo/Brand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Demo/BrandDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Druid/DruidDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JDBC/emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/druid.properties" afterDir="false" />
+    <list default="true" id="fd1d778a-0f4f-471f-ac2a-0094a922aceb" name="变更" comment="JDBC应用">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/JDBC/JdbcGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/JdbcGet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Demo/BrandDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Demo/BrandDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650345747454</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JDBC应用">
+      <created>1650351478924</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650351478924</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UpdateCopyrightCheckinHandler">
@@ -221,7 +221,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JDBC简单应用" />
-    <option name="LAST_COMMIT_MESSAGE" value="JDBC简单应用" />
+    <MESSAGE value="JDBC应用" />
+    <option name="LAST_COMMIT_MESSAGE" value="JDBC应用" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>

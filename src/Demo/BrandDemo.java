@@ -18,7 +18,6 @@ public class BrandDemo {
     }
 
     /**
-     * @throws Exception
      * @use 查询所有数据
      */
     public void selectAll() throws Exception {
