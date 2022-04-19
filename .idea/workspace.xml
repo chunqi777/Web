@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1d778a-0f4f-471f-ac2a-0094a922aceb" name="变更" comment="JDBC简单应用" />
+    <list default="true" id="fd1d778a-0f4f-471f-ac2a-0094a922aceb" name="变更" comment="JDBC简单应用">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JDBC/JdbcGet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JDBC/JdbcGet.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +55,7 @@
       <recent name="D:\JavaDemo\WEB\Web\lib" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.JDBC.JdbcDemo">
+  <component name="RunManager" selected="应用程序.JdbcGet">
     <configuration name="JDBC.JdbcDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JDBC.JdbcDemo" />
       <module name="Web" />
@@ -81,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.JDBC.JdbcDemo" />
         <item itemvalue="应用程序.JdbcGet" />
+        <item itemvalue="应用程序.JDBC.JdbcDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -123,8 +126,18 @@
       <option name="project" value="LOCAL" />
       <updated>1650337557899</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="JDBC简单应用">
+      <created>1650337611926</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650337611926</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
@@ -163,5 +176,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="JDBC简单应用" />
     <option name="LAST_COMMIT_MESSAGE" value="JDBC简单应用" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
