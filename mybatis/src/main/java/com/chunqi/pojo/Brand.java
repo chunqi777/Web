@@ -17,6 +17,14 @@ public class Brand {
     public Brand() {
     }
 
+    public Brand(String brandName, String companyName, Integer ordered, String description, Integer status) {
+        this.brandName = brandName;
+        this.companyName = companyName;
+        this.ordered = ordered;
+        this.description = description;
+        this.status = status;
+    }
+
     public Brand(Integer id, String brandName, String companyName, Integer ordered, String description, Integer STATUS) {
         this.id = id;
         this.brandName = brandName;

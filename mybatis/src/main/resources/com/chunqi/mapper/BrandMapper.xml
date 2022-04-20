@@ -8,6 +8,43 @@
 -->
 
 <mapper namespace="com.chunqi.mapper.BrandMapper">
+    <update id="update">
+        update tb_brand
+        <set>
+            <if test="brandName!=null and brandName!=''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName!=null and companyName!=''">
+                company_name = #{companyName},
+            </if>
+            <if test="ordered!=null">
+                ordered = #{ordered},
+            </if>
+            <if test="description!=null and description!=''">
+                description = #{description},
+            </if>
+            <if test="status!=null">
+                status = #{status}
+            </if>
+        </set>
+        where id = #{id};
+    </update>
+    <delete id="deleteById">
+        delete
+        from tb_brand
+        where
+        id = #{id};
+    </delete>
+
+    <delete id="deleteByIds">
+        delete
+        from tb_brand
+        where id in
+        <foreach collection="ids" item="id" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+    </delete>
+
 
     <!--
         resultMap：字段映射
@@ -19,17 +56,18 @@
     <select id="selectByCondition" resultMap="brandResultMap">
         select *
         from tb_brand
-        where
-        '1'='1'
-        <if test="status!=null">
-            and status = #{status}
-        </if>
-        <if test="companyName!=null and companyName!=''">
-            and company_name like #{companyName}
-        </if>
-        <if test="brandName!=null and brandName!=''">
-            and brand_name like #{brandName}
-        </if>
+        <where>
+            <if test="status!=null">
+                and status = #{status}
+            </if>
+            <if test="companyName!=null and companyName!=''">
+                and company_name like #{companyName}
+            </if>
+            <if test="brandName!=null and brandName!=''">
+                and brand_name like #{brandName}
+            </if>
+        </where>
+
     </select>
 
     <resultMap id="brandResultMap" type="com.chunqi.pojo.Brand">
@@ -46,6 +84,32 @@
     <select id="selectById" resultMap="brandResultMap">
         select * from tb_brand where id = #{id};
     </select>
+    <select id="selectByStatus" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        where
+        <choose><!--相当于switch-->
+            <when test="status!=null"><!--相当于case-->
+                status = #{status}
+            </when>
+            <when test="companyName!=null and companyName!=''">
+                company_name like #{companyName}
+            </when>
+            <when test="brandName!=null and brandName!=''">
+                brand_name like #{brandName}
+            </when>
+            <otherwise>
+                1=1
+            </otherwise>
+        </choose>
+    </select>
+
+    <!--添加数据-->
+    <insert id="addAll" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand (brand_name,company_name,ordered,description,status)
+        values(#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
 
     <!--    &lt;!&ndash;sql片段&ndash;&gt;-->
     <!--    <sql id="brand_column">-->
