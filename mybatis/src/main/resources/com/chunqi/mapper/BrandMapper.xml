@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace:命名空间
+-->
+
+<mapper namespace="com.chunqi.mapper.BrandMapper">
+
+    <!--
+        resultMap：字段映射
+        id:唯一标识
+        type：类型
+        column:数据库的列名称
+        property:类成员名称
+    -->
+    <select id="selectByCondition" resultMap="brandResultMap">
+        select *
+        from tb_brand
+        where
+        '1'='1'
+        <if test="status!=null">
+            and status = #{status}
+        </if>
+        <if test="companyName!=null and companyName!=''">
+            and company_name like #{companyName}
+        </if>
+        <if test="brandName!=null and brandName!=''">
+            and brand_name like #{brandName}
+        </if>
+    </select>
+
+    <resultMap id="brandResultMap" type="com.chunqi.pojo.Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+    <select id="selectAll" resultMap="brandResultMap">
+        select * from tb_brand;
+    </select>
+
+    <!--
+        条件查询
+    -->
+    <select id="selectById" resultMap="brandResultMap">
+        select * from tb_brand where id = #{id};
+    </select>
+
+    <!--    &lt;!&ndash;sql片段&ndash;&gt;-->
+    <!--    <sql id="brand_column">-->
+    <!--        id,brand_name,company_name,ordered,description,status-->
+    <!--    </sql>-->
+
+    <!--    &lt;!&ndash;statement&ndash;&gt;-->
+    <!--    <select id="selectAll" resultType="com.chunqi.pojo.Brand">-->
+    <!--        select-->
+    <!--         <include refid="brand_column"/>-->
+    <!--         from tb_brand;-->
+    <!--    </select>-->
+</mapper>
